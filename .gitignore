@@ -14,7 +14,7 @@
 __pycache__/
 *.py[cod]
 
-# Tracked upstream repos kept only in registry.yaml
+# Local-only upstream skill/research repos
 Auto-claude-code-research-in-sleep/
 Awesome-Agent-Skills-for-Empirical-Research/
 Awesome-Scientific-Skills/
@@ -25,10 +25,15 @@ andrej-karpathy-skills/
 applied-math-paper-derivation/
 autoresearch/
 claude-scholar/
+folo/
 guizang-ppt-skill/
+html-anything/
+html-effectiveness/
 latex-arxiv-SKILL/
+openhuman/
 openresearch/
 paper-deep-reading-skill/
+ppt-master/
 sciwrite/
 skills/
 

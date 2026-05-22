@@ -170,12 +170,10 @@
 Awesome-SKILLs/
 ├── README.md                           # 本文件：分类浏览与快速选型
 ├── registry.yaml                       # 结构化元数据，供脚本和 AI 查询
-├── academic-research-skills/           # 学术研究全流程 skills
-├── Auto-claude-code-research-in-sleep/ # ARIS 自动研究框架
-├── autoresearch/                       # AI 自主 ML 实验框架
-├── claude-scholar/                     # 半自动化学术助手
-├── sciwrite/                           # 科学写作审查 skill
-├── skills/                             # UniFuncs 深度搜索 skills
-└── scripts/
-    └── sync.py                         # git pull + SHA-256 检测，同步 registry 和 README
+├── requirements.txt                    # Python 依赖
+├── scripts/
+│   └── sync.py                         # git pull + SHA-256 检测，同步 registry 和 README
+└── .claude/
+    ├── .env.example                    # API key 示例，不含真实密钥
+    └── skills/registry-manage/         # 本仓库 registry 管理 Skill
 ```
