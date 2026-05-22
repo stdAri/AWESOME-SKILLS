@@ -14,6 +14,24 @@
 __pycache__/
 *.py[cod]
 
+# Tracked upstream repos kept only in registry.yaml
+Auto-claude-code-research-in-sleep/
+Awesome-Agent-Skills-for-Empirical-Research/
+Awesome-Scientific-Skills/
+Research-Paper-Writing-Skills/
+SkVM/
+academic-research-skills/
+andrej-karpathy-skills/
+applied-math-paper-derivation/
+autoresearch/
+claude-scholar/
+guizang-ppt-skill/
+latex-arxiv-SKILL/
+openresearch/
+paper-deep-reading-skill/
+sciwrite/
+skills/
+
 # OS / editor
 .DS_Store
 Thumbs.db
