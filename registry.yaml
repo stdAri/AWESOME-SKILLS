@@ -22,14 +22,15 @@ repos:
   local_path: academic-research-skills
   categories:
   - academic-research
-  updated_at: '2026-05-07'
+  updated_at: '2026-05-21'
   changelog:
+  - '2026-05-21  fix(#195): /ars-mark-read crashed on real YAML passports (json.load → yaml.safe_load) (#196)；feat(commands): add /ars-reviewer + sync announce-ars-loaded.sh (#193)；feat(commands): implement /ars-mark-read + /ars-unmark-read plugin commands (#191)；Add Simplified Chinese README (#181)；fix(lint): cap check_version_consistency semver regex at 4 segments (#180)；…（共 55 条）'
   - '2026-05-07  docs: add NOTICE.md (personal project statement) (#75)；spec(v3.7.1): trust provenance & drift transparency design — 8-round codex convergence (#74)；docs(readme): hero install hook + prerequisites + first-command guide (#72)；feat(v3.7.0 Phase 3): version sweep across 8 files (3 inline + 1 fresh PR review → 0 findings) (#71)；feat(v3.7.0 Phase 2.2): SessionStart announce hook (2 inline rounds + fresh PR review → 0 findings) (#70)；…（共 15 条）'
   - '2026-05-03  feat(v3.6.6, suite v3.6.8): generator-evaluator contract implementation — code-only tracks (#59)；spec(v3.6.6): generator-evaluator contract design — full spec ready for impl (#58)；chore(gitignore): ignore ROADMAP.md (private, lives in claude-memory-sync) (#57)；feat(v3.6.7 Step 6 Phase 6.3): audit artifact consistency lint script + 135-test pytest suite (#56)；feat(v3.6.7 Step 6 Phase 6.1): codex audit wrapper + JSONL parser + byte-exact snapshot helper (#55)；…（共 17 条）'
   - '2026-04-27  fix(v3.6.5.2): mark claude.ai Method 4a not recommended for this Claude Code-native suite (#46)；fix(v3.6.5.1): SETUP doc correctness — install paths, claude.ai distinction, prereqs (#45)；docs: refresh ARCHITECTURE / SETUP / PERFORMANCE to v3.6.5 (fast-follow) (#43)；feat(v3.6.5): release sweep — literature_corpus[] consumer integration (PR-B) (#42)；feat(v3.6.5): PR-A corpus consumer (deep-research) — single-consumer pre-release (#41)；…（共 159 条）'
   - 2026-04-16  添加 SECURITY.md 安全策略文档（v3.3.6）
 
-  last_commit: 6aaef85a97ba22bc32140daf649767e35ed6436f
+  last_commit: 2236bed19f95ad72f7ecd6e2c80123e60e0374c6
 - name: claude-scholar
   display_name: Claude Scholar
   description: 面向 CS/AI 研究者的半自动化研究助手，支持文献综述、实验代码、分析报告写作和项目知识管理；兼容 Claude Code、Codex CLI、OpenCode
@@ -38,13 +39,14 @@ repos:
   categories:
   - academic-research
   - coding
-  updated_at: '2026-04-27'
+  updated_at: '2026-05-14'
   changelog:
+  - '2026-05-14  docs(readme): restore planning workflow in docs；feat(instructions): add planning persistence workflow；feat(skills): add nature-writing and refresh polishing；docs: strengthen public instruction defaults；docs: align public communication defaults；…（共 13 条）'
   - '2026-04-27  docs(readme): simplify kb news wording；docs(readme): merge obsidian kb news item；docs(readme): restore recent news history'
   - '2026-04-27  docs(readme): simplify kb news wording；docs(readme): merge obsidian kb news item；docs(readme): restore recent news history；fix(obsidian): harden index markers and canvas guidance；fix(obsidian): preserve curated kb surfaces and add compatibility stubs；…（共 15 条）'
   - 2026-04-15  修复 Windows CI 路径匹配；引入 pubfig/pubtab 实现论文级图表和表格生成
 
-  last_commit: a61bb0a99683d5f9f0f3102a29a27e06c767e83e
+  last_commit: 6e2a7092f38b83dcd45b97c9bc3680bbe180aff7
 - name: auto-claude-code-research-in-sleep
   display_name: ARIS (Auto Research In Sleep)
   description: 让 Claude Code 自主推进研究：评审循环、实验执行、叙述改写，overnight 运行。零依赖纯 Markdown，可迁移至任意 Agent（Cursor、Trae、Windsurf 等）
@@ -53,14 +55,15 @@ repos:
   categories:
   - academic-research
   - autonomous-research
-  updated_at: '2026-05-07'
+  updated_at: '2026-05-22'
   changelog:
+  - '2026-05-22  docs(readme): Phase A — numbered TOC + section numbering + compat anchors；fix: tighten parse_claude_json legacy NDJSON diagnostics (#224)；docs(readme): mention ARIS-Homepage coming feature in 秋招 line；docs(readme): hoist ARIS-Anything pointer above AI-Offer banner；docs(readme): mention ARIS-Gym in Incoming-siblings teaser；…（共 99 条）'
   - '2026-05-07  docs(news): add 2026-05-06 entry for /paper-talk + /slides-polish；feat(paper-talk): end-to-end conference talk pipeline workflow；feat(slides-polish): per-page Codex review + targeted layout/font fixes for talk decks；docs(news): add 2026-05-05 entry for /resubmit-pipeline (#208) (#209)；feat(resubmit-pipeline): new W5 skill + edit-whitelist + citation-audit --soft-only (#208)；…（共 9 条）'
   - '2026-05-03  feat(writer-skills): opt-in — style-ref: <source> for structural style mimicry (#202)；chore(docs): generic-ize empirical-motivation examples in skill docs (#201)；docs(community): spotlight rosetta (SyntaxSmith) — Pro-tier ChatGPT MCP alt to Oracle；docs(readme): add (b) entry for /idea-discovery gemini auto-injection (PR #199) into 2026-05-02 model-routing group；feat(idea-discovery): include gemini in Phase 1 literature survey by default；…（共 38 条）'
   - "2026-04-25  chore: refresh WeChat group QR code (Claude Code ARIS 交流 13 群)；feat(paper-writing): wire codex-image2 as Phase 2b illustration backend；Harden codex-image2 bridge integration；Add Codex image2 illustration bridge；docs(readme): fold April 3–17 What's New entries under details；…（共 15 条）"
   - 2026-04-17  ARIS-Code CLI v0.4.3 — 支持第三方 Anthropic-compat 代理（Bedrock 等），修复代理不支持的 beta flags
 
-  last_commit: 391bda8baf2bdb262d479e593ed71a4b934b0120
+  last_commit: d5f450c804f257e1a9d12e6d02344f17c1df2fe7
 - name: autoresearch
   display_name: autoresearch (karpathy)
   description: 给 AI Agent 一个迷你 LLM 训练环境，让其自主实验：修改训练代码→固定5分钟训练→比对 val_bpb 指标→保留或回滚，实现无人值守的过夜 ML 研究
@@ -159,9 +162,10 @@ repos:
   local_path: SkVM
   categories:
   - coding
-  updated_at: '2026-04-27'
-  last_commit: 'aa177e6f48d901fbc7283c19bd743e7b3d1d3dfc'
+  updated_at: '2026-05-21'
+  last_commit: '4bfa62ae202a1ea404a6de7a3543f7b0a6a1de87'
   changelog:
+  - "2026-05-21  headless-agent: add pi driver for optimizer agent (#27)；skill-mode: configurable on run and jit-optimize (#25)；cli: unify timeout flags as --timeout-ms across all commands (#24)；cli: honor task.timeoutMs across run, jit-optimize, bench (#19)；cli: reject unknown flags with a 'did you mean' hint (#18)；…（共 8 条）"
   - '2026-04-27  docs: add CONTRIBUTING.md and issue/PR templates；Bump skvm-data: add deepseek-v4-{flash,pro} profiles；providers+hermes: deepseek thinking-mode echo + hermes managed-mode fix；cli-config: cap config init backups at 5 most recent；docs: capture aot-compile pass-registry follow-up debt；…（共 10 条）'
 
 - name: guizang-ppt-skill
@@ -171,9 +175,10 @@ repos:
   local_path: guizang-ppt-skill
   categories:
   - coding
-  updated_at: '2026-04-28'
-  last_commit: '72837a8513d1145d800095fc3909d6d3057994b8'
+  updated_at: '2026-05-19'
+  last_commit: '6bfa520b86ed5a3dffdac0a3323155e2b6f516b6'
   changelog:
+  - 2026-05-19  Fix Swiss style minimum font sizes and add weight ladder rules；Add bundled screenshot backgrounds；Add screenshot framing semantics；Add skill provenance marker；Link ZhenFund grant badge；…（共 12 条）
   - 2026-04-28  Update README for Codex image flow；Add Codex image generation guidance
   - '2026-04-26  feat: integrate Motion One animation system (default-on)；fix: resolve grid-4 overflow and frame clip into .foot (#5)；Rename skill to guizang-ppt-skill, add npx install；feat: implement ESC overview index (#1)；docs: add English README；…（共 8 条）'
 
@@ -184,9 +189,10 @@ repos:
   local_path: Awesome-Agent-Skills-for-Empirical-Research
   categories:
   - academic-research
-  updated_at: '2026-05-04'
-  last_commit: 'ca36c7acb2a15fdebf760d4bac4f1636ebcb4b30'
+  updated_at: '2026-05-18'
+  last_commit: 'd1937c819f19214361161b89266936429ecaefc6'
   changelog:
+  - '2026-05-18  docs(readme): 在 README 底部新增 Star History 折线图'
   - '2026-05-04  docs(changelog): 新增 2026-05-04 条目 —— 首个社区 PR 收录 humanize-chinese；docs: vendor humanize-chinese into skills/49 + 更新 README 本地位置；docs: 收录 humanize-chinese 到降 AIGC 检测率章节 (#5)；chore(demo): pin notebook kernel to Python 3.11.0；feat(demo): add LaLonde 5.2 pipeline outputs across StatsPAI/Stata/R + scaffold test-skill'
   - '2026-04-30  chore: ignore .DS_Store and untrack existing ones；feat(demo): extend LaLonde v2 pipeline with artifact outputs and test files；feat(demo): extend LaLonde pipeline outputs with v2 runners and multi-format tables；feat(skills): enforce multi-format output — PNG (≥300 dpi) + PDF for figures, .xlsx + .docx + .tex for tables；feat(skills): align Python/Stata/R empirical-analysis skills to StatsPAI scaffolding；…（共 8 条）'
   - '2026-04-26  docs(skills): add epidemiology + ML-causal sub-pipelines to all four skill variants；refactor(demo): align Card pipeline with new sp.regtable full-coef default；feat(skills/statspai): document Word/Excel/LaTeX export pipeline + add Card returns demo；chore(demo): refresh LaLonde pipeline notebook outputs and artifacts；feat(skills): launch full empirical analysis skill family + LaLonde demos；…（共 10 条）'
@@ -237,9 +243,10 @@ repos:
   categories:
   - autonomous-research
   - academic-research
-  updated_at: '2026-05-06'
-  last_commit: 'bb6aaa4fc54fd253b982f6c21a0dc143350d7d0f'
+  updated_at: '2026-05-19'
+  last_commit: '2676266ba3117ecb72976b60077e39b070225e5a'
   changelog:
+  - '2026-05-19  tool use allow；修改无法保存markdown文档的bug；fix(collab): unify multi-agent workflow state machine；fix: Compatible with workflow and spawn agent；Shift+Click to Cite atom.；…（共 8 条）'
   - '2026-05-06  fix(collab): wake on session idle + prevent list_children polling；新增 GraphRAG 剪枝和评分功能；  feat(collab): multi-agent collaboration framework'
   - '2026-05-02  project-runtime-profile； fix(atom-detail): sync session id before toggling chat；  fix(provider): backport deepseek reasoning and interleaved fallback；修复本身不联网的服务器实验时无法启用wandb监控的bug,新增为服务器设置反向隧道的功能；新增add_new_idea功能,将idea解析为原子树'
 

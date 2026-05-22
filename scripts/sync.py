@@ -56,6 +56,8 @@ def _git(repo_path: Path, *args: str) -> list[str]:
 
 
 def get_latest_date(repo_path: Path) -> str | None:
+    if not (repo_path / ".git").exists():
+        return None
     lines = _git(repo_path, "log", "-1", "--format=%ci")
     return lines[0].split()[0] if lines else None  # YYYY-MM-DD
 
@@ -114,19 +116,16 @@ def prepend_changelog(entry: dict, new_date: str, summary: str) -> None:
     entry["updated_at"] = new_date  # ruamel.yaml 接受字符串，不会再转 date
 
 
-# ── README.md 更新（替换表格行中的日期·描述字段，分条 <br>· 格式） ───────────
+# ── README.md 更新（只替换表格行中的“最近同步”日期，保持 README 简洁） ───────────
 def update_readme_entry(readme_text: str, local_path: str,
                         new_date: str, new_summary: str) -> str:
     escaped = re.escape(local_path)
-    # 兼容旧格式（「date · summary」）、新格式（「date<br>· item」）及初始化占位符（「待初始化」）
     pattern = re.compile(
-        rf"(\*\*\[[^\]]+\]\({escaped}[^)]*\)\*\*[^\r\n]*\|\s*)"
-        rf"(?:\d{{4}}-\d{{2}}-\d{{2}}[^|\r\n]+|（待初始化）)"
+        rf"(\|\s*\*\*\[[^\]]+\]\({escaped}[^)]*\)\*\*[^\r\n]*\|\s*)"
+        rf"(?:\d{{4}}-\d{{2}}-\d{{2}}|待初始化|（待初始化）)"
         rf"(\s*\|)"
     )
-    items = [s.strip() for s in new_summary.split("；") if s.strip()]
-    cell = new_date + "".join(f"<br>· {item}" for item in items)
-    return pattern.sub(rf"\g<1>{cell}\g<2>", readme_text)
+    return pattern.sub(rf"\g<1>{new_date}\g<2>", readme_text)
 
 
 # ── 处理 git repo ──────────────────────────────────────────────────────────────
