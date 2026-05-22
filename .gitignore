@@ -1,0 +1,21 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.claude/.env
+.claude/settings.local.json
+
+# Claude / OMC local state
+.omc/
+.agents/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

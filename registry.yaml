@@ -1,0 +1,286 @@
+# Awesome-SKILLs Registry
+# 以 repo 为单位管理
+# 字段说明：
+#   name         : repo 唯一标识符（与本地目录名一致）
+#   display_name : 展示名称
+#   description  : 功能描述
+#   repo         : 来源 GitHub 仓库
+#   local_path   : 本地相对路径
+#   skill_source : (可选) 远程 SKILL.md URL，sync.py 通过 SHA-256 对比检测变化
+#   categories   : 所属分类
+#   updated_at   : 最近同步日期（YYYY-MM-DD），由 sync.py 自动维护
+#   last_commit  : 最近同步时的 HEAD commit hash（40 字符），由 sync.py 写入；
+#                  下次 sync 用 `git log <hash>..HEAD` 精确对比，避免日期边界误报
+#   changelog    : 更新历史列表（newest-first），由 sync.py 自动追加
+
+repos:
+
+- name: academic-research-skills
+  display_name: Academic Research Skills
+  description: 覆盖从选题到投稿的完整学术研究流水线，含完整性门控（Stage 2.5/4.5）、引用核查（Semantic Scholar API）、交叉验证和 VLM 图表验证
+  repo: https://github.com/Imbad0202/academic-research-skills
+  local_path: academic-research-skills
+  categories:
+  - academic-research
+  updated_at: '2026-05-07'
+  changelog:
+  - '2026-05-07  docs: add NOTICE.md (personal project statement) (#75)；spec(v3.7.1): trust provenance & drift transparency design — 8-round codex convergence (#74)；docs(readme): hero install hook + prerequisites + first-command guide (#72)；feat(v3.7.0 Phase 3): version sweep across 8 files (3 inline + 1 fresh PR review → 0 findings) (#71)；feat(v3.7.0 Phase 2.2): SessionStart announce hook (2 inline rounds + fresh PR review → 0 findings) (#70)；…（共 15 条）'
+  - '2026-05-03  feat(v3.6.6, suite v3.6.8): generator-evaluator contract implementation — code-only tracks (#59)；spec(v3.6.6): generator-evaluator contract design — full spec ready for impl (#58)；chore(gitignore): ignore ROADMAP.md (private, lives in claude-memory-sync) (#57)；feat(v3.6.7 Step 6 Phase 6.3): audit artifact consistency lint script + 135-test pytest suite (#56)；feat(v3.6.7 Step 6 Phase 6.1): codex audit wrapper + JSONL parser + byte-exact snapshot helper (#55)；…（共 17 条）'
+  - '2026-04-27  fix(v3.6.5.2): mark claude.ai Method 4a not recommended for this Claude Code-native suite (#46)；fix(v3.6.5.1): SETUP doc correctness — install paths, claude.ai distinction, prereqs (#45)；docs: refresh ARCHITECTURE / SETUP / PERFORMANCE to v3.6.5 (fast-follow) (#43)；feat(v3.6.5): release sweep — literature_corpus[] consumer integration (PR-B) (#42)；feat(v3.6.5): PR-A corpus consumer (deep-research) — single-consumer pre-release (#41)；…（共 159 条）'
+  - 2026-04-16  添加 SECURITY.md 安全策略文档（v3.3.6）
+
+  last_commit: 6aaef85a97ba22bc32140daf649767e35ed6436f
+- name: claude-scholar
+  display_name: Claude Scholar
+  description: 面向 CS/AI 研究者的半自动化研究助手，支持文献综述、实验代码、分析报告写作和项目知识管理；兼容 Claude Code、Codex CLI、OpenCode
+  repo: https://github.com/Galaxy-Dawn/claude-scholar
+  local_path: claude-scholar
+  categories:
+  - academic-research
+  - coding
+  updated_at: '2026-04-27'
+  changelog:
+  - '2026-04-27  docs(readme): simplify kb news wording；docs(readme): merge obsidian kb news item；docs(readme): restore recent news history'
+  - '2026-04-27  docs(readme): simplify kb news wording；docs(readme): merge obsidian kb news item；docs(readme): restore recent news history；fix(obsidian): harden index markers and canvas guidance；fix(obsidian): preserve curated kb surfaces and add compatibility stubs；…（共 15 条）'
+  - 2026-04-15  修复 Windows CI 路径匹配；引入 pubfig/pubtab 实现论文级图表和表格生成
+
+  last_commit: a61bb0a99683d5f9f0f3102a29a27e06c767e83e
+- name: auto-claude-code-research-in-sleep
+  display_name: ARIS (Auto Research In Sleep)
+  description: 让 Claude Code 自主推进研究：评审循环、实验执行、叙述改写，overnight 运行。零依赖纯 Markdown，可迁移至任意 Agent（Cursor、Trae、Windsurf 等）
+  repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+  local_path: Auto-claude-code-research-in-sleep
+  categories:
+  - academic-research
+  - autonomous-research
+  updated_at: '2026-05-07'
+  changelog:
+  - '2026-05-07  docs(news): add 2026-05-06 entry for /paper-talk + /slides-polish；feat(paper-talk): end-to-end conference talk pipeline workflow；feat(slides-polish): per-page Codex review + targeted layout/font fixes for talk decks；docs(news): add 2026-05-05 entry for /resubmit-pipeline (#208) (#209)；feat(resubmit-pipeline): new W5 skill + edit-whitelist + citation-audit --soft-only (#208)；…（共 9 条）'
+  - '2026-05-03  feat(writer-skills): opt-in — style-ref: <source> for structural style mimicry (#202)；chore(docs): generic-ize empirical-motivation examples in skill docs (#201)；docs(community): spotlight rosetta (SyntaxSmith) — Pro-tier ChatGPT MCP alt to Oracle；docs(readme): add (b) entry for /idea-discovery gemini auto-injection (PR #199) into 2026-05-02 model-routing group；feat(idea-discovery): include gemini in Phase 1 literature survey by default；…（共 38 条）'
+  - "2026-04-25  chore: refresh WeChat group QR code (Claude Code ARIS 交流 13 群)；feat(paper-writing): wire codex-image2 as Phase 2b illustration backend；Harden codex-image2 bridge integration；Add Codex image2 illustration bridge；docs(readme): fold April 3–17 What's New entries under details；…（共 15 条）"
+  - 2026-04-17  ARIS-Code CLI v0.4.3 — 支持第三方 Anthropic-compat 代理（Bedrock 等），修复代理不支持的 beta flags
+
+  last_commit: 391bda8baf2bdb262d479e593ed71a4b934b0120
+- name: autoresearch
+  display_name: autoresearch (karpathy)
+  description: 给 AI Agent 一个迷你 LLM 训练环境，让其自主实验：修改训练代码→固定5分钟训练→比对 val_bpb 指标→保留或回滚，实现无人值守的过夜 ML 研究
+  repo: https://github.com/karpathy/autoresearch
+  local_path: autoresearch
+  categories:
+  - autonomous-research
+  - ml-training
+  updated_at: 2026-03-25
+  changelog:
+  - 2026-03-25  Bug fix（PR     #342）
+
+- name: sciwrite
+  display_name: SciWrite — Manuscript Writing Review
+  description: 基于斯坦福 Sainani《Writing in the Sciences》课程的手稿写作审查 Skill，执行去冗余、主动语态、句子结构、关键词一致性、数据引用完整性五轮审查
+  repo: https://github.com/labarba/sciwrite
+  local_path: sciwrite
+  categories:
+  - scientific-writing
+  updated_at: '2026-04-04'
+  changelog:
+  - 2026-04-04  trim README；add hand-edited README；Create LICENSE；add files from local working dir；Initial commit
+  - 2026-04-04  trim README；add hand-edited README；Create LICENSE；add files from local working dir；Initial commit
+  - 2026-04-04  精简 README
+
+  last_commit: 8a57fa73d541bdcf7d8501db61c018cb454e9afa
+- name: unifuncs-skills
+  display_name: UniFuncs Agent Skills
+  description: UniFuncs AI 深度搜索能力套件：实时网页搜索、URL 内容读取（支持 PDF/Word/Excel/PPTX）、多源交叉验证的深度搜索（1-5分钟）和深度研究报告生成（3-10分钟）
+  repo: https://github.com/UniFuncs/skills
+  local_path: skills
+  categories:
+  - search
+  - information-retrieval
+  updated_at: '2026-03-29'
+  changelog:
+  - '2026-03-29  docs: Enhance UniFuncs Deep Research Skill documentation；fix: Update max-words limit in read.py and SKILL.md'
+  - 2026-03-29  完善 UniFuncs Deep Research Skill 文档
+
+  last_commit: fdcf570d80decb7a3a13ce295bae2cef2766cb7c
+- name: folo
+  display_name: Folo CLI Skill
+  description: Folo RSS 阅读器的 AI Agent CLI 技能，支持订阅管理、时间线阅读、未读处理、收藏操作、OPML 导入导出，通过 npx folocli@latest 零安装调用
+  repo: https://github.com/RSSNext/Folo
+  local_path: folo
+  skill_source: https://api.folo.is/skill.md
+  categories:
+  - rss
+  - information-retrieval
+  updated_at: '2026-04-27'
+  changelog:
+  - 2026-04-27  skill_source 内容更新（https://api.folo.is/skill.md）
+  - 2026-04-27  从 https://api.folo.is/skill.md 添加官方 Folo CLI Skill
+
+- name: paper-deep-reading-skill
+  display_name: Paper Deep Reading Skill
+  description: 逐页精读本地学术 PDF，抓取定理链与仿真截图，输出带图证据的结构化中文 Markdown 报告；尤适控制/估计/观测器类论文
+  repo: https://github.com/Eroticoo/paper-deep-reading-skill
+  local_path: paper-deep-reading-skill
+  categories:
+  - academic-research
+  updated_at: '2026-04-21'
+  last_commit: '5a142a5f67d56fd5673fdecb13226e5f78a1f169'
+  changelog:
+  - 2026-04-21  Redesign README with tags and detailed workflow；Clarify Windows support and mac experimental usage；Add Codex-assisted install note to README；Flatten skill repo and remove PowerShell installer flow；Rewrite README in Chinese and emphasize installation；…（共 9 条）
+
+- name: applied-math-paper-derivation
+  display_name: Applied Math Paper Derivation
+  description: 面向英文应用数学论文的推导重建 Skill，逐段详解推导、重构创新点公式，输出 IEEE 双栏 PDF + Markdown，难点用紫色标注
+  repo: https://github.com/Eroticoo/applied-math-paper-derivation
+  local_path: applied-math-paper-derivation
+  categories:
+  - academic-research
+  updated_at: '2026-04-02'
+  last_commit: '3af5504d6986e51c0fd51b87e5431e95b4080e76'
+  changelog:
+  - 2026-04-02  Polish README with install guide and visuals；Add publishable applied math derivation skill
+
+- name: latex-arxiv-SKILL
+  display_name: LaTeX arXiv Paper Writer
+  description: Issue 驱动的 IEEEtran 双栏 LaTeX 工作流，两条提示词生成完整 arXiv ML/AI 综述论文，含 BibTeX 引文验证；Claude Code 和 Codex 均支持
+  repo: https://github.com/renocrypt/latex-arxiv-SKILL
+  local_path: latex-arxiv-SKILL
+  categories:
+  - academic-research
+  - scientific-writing
+  updated_at: '2025-12-29'
+  last_commit: '278c7dcd4df9ac67dd41dc150ba0a090c44e57b5'
+  changelog:
+  - '2025-12-29  v0.5 multi-SKILLs and sqlite bib caching；refine the SKILL calling logic；testing multi-skill arrangement；refine the arxiv fetching logic；feat(arxiv-paper-writer): add arXiv registry cache；…（共 8 条）'
+
+- name: SkVM
+  display_name: SkVM (SJTU-IPADS)
+  description: 上交大出品的 LLM Agent Skill 编译运行时，对 Skill 做 Profiling、AOT 编译和 JIT 优化，使其跨异构模型和 harness 运行（arXiv:2604.03088）
+  repo: https://github.com/SJTU-IPADS/SkVM
+  local_path: SkVM
+  categories:
+  - coding
+  updated_at: '2026-04-27'
+  last_commit: 'aa177e6f48d901fbc7283c19bd743e7b3d1d3dfc'
+  changelog:
+  - '2026-04-27  docs: add CONTRIBUTING.md and issue/PR templates；Bump skvm-data: add deepseek-v4-{flash,pro} profiles；providers+hermes: deepseek thinking-mode echo + hermes managed-mode fix；cli-config: cap config init backups at 5 most recent；docs: capture aot-compile pass-registry follow-up debt；…（共 10 条）'
+
+- name: guizang-ppt-skill
+  display_name: 歸藏 Magazine Web PPT Skill
+  description: 生成电子杂志风横向翻页单文件 HTML PPT，含 WebGL 背景、5 套主题色、10 种页面布局，由歸藏从线下分享实践沉淀
+  repo: https://github.com/op7418/guizang-ppt-skill
+  local_path: guizang-ppt-skill
+  categories:
+  - coding
+  updated_at: '2026-04-28'
+  last_commit: '72837a8513d1145d800095fc3909d6d3057994b8'
+  changelog:
+  - 2026-04-28  Update README for Codex image flow；Add Codex image generation guidance
+  - '2026-04-26  feat: integrate Motion One animation system (default-on)；fix: resolve grid-4 overflow and frame clip into .foot (#5)；Rename skill to guizang-ppt-skill, add npx install；feat: implement ESC overview index (#1)；docs: add English README；…（共 8 条）'
+
+- name: Awesome-Agent-Skills-for-Empirical-Research
+  display_name: Awesome Agent Skills for Empirical Research
+  description: CoPaper.AI × Stanford REAP 维护的实证研究 Skills 大全，收录 119 个仓库 / 23000+ Skills，覆盖 DID/IV/RDD/PSM 等因果推断全链路
+  repo: https://github.com/brycewang-stanford/Awesome-Agent-Skills-for-Empirical-Research
+  local_path: Awesome-Agent-Skills-for-Empirical-Research
+  categories:
+  - academic-research
+  updated_at: '2026-05-04'
+  last_commit: 'ca36c7acb2a15fdebf760d4bac4f1636ebcb4b30'
+  changelog:
+  - '2026-05-04  docs(changelog): 新增 2026-05-04 条目 —— 首个社区 PR 收录 humanize-chinese；docs: vendor humanize-chinese into skills/49 + 更新 README 本地位置；docs: 收录 humanize-chinese 到降 AIGC 检测率章节 (#5)；chore(demo): pin notebook kernel to Python 3.11.0；feat(demo): add LaLonde 5.2 pipeline outputs across StatsPAI/Stata/R + scaffold test-skill'
+  - '2026-04-30  chore: ignore .DS_Store and untrack existing ones；feat(demo): extend LaLonde v2 pipeline with artifact outputs and test files；feat(demo): extend LaLonde pipeline outputs with v2 runners and multi-format tables；feat(skills): enforce multi-format output — PNG (≥300 dpi) + PDF for figures, .xlsx + .docx + .tex for tables；feat(skills): align Python/Stata/R empirical-analysis skills to StatsPAI scaffolding；…（共 8 条）'
+  - '2026-04-26  docs(skills): add epidemiology + ML-causal sub-pipelines to all four skill variants；refactor(demo): align Card pipeline with new sp.regtable full-coef default；feat(skills/statspai): document Word/Excel/LaTeX export pipeline + add Card returns demo；chore(demo): refresh LaLonde pipeline notebook outputs and artifacts；feat(skills): launch full empirical analysis skill family + LaLonde demos；…（共 10 条）'
+
+- name: andrej-karpathy-skills
+  display_name: Karpathy-Inspired Claude Code Guidelines
+  description: Karpathy 提炼 LLM 编码四原则，以单一 CLAUDE.md 改善 Claude Code 行为：先思后码、简洁优先、外科修改、目标驱动；含 Claude Code Plugin 安装支持
+  repo: https://github.com/forrestchang/andrej-karpathy-skills
+  local_path: andrej-karpathy-skills
+  categories:
+  - coding
+  updated_at: '2026-04-20'
+  last_commit: '2c606141936f1eeef17fa3043a72095b4765b9c2'
+  changelog:
+  - 2026-04-20  Sync Chinese README with English version (add Cursor section) (#95)；add cursor support (#92)；Add Chinese translation for README (#93)；Update README with project and social media links；Update README with project and social media links；…（共 9 条）
+
+- name: Awesome-Scientific-Skills
+  display_name: Awesome Scientific Skills
+  description: 面向自然科学研究者的开放 Agent Skills 精选合集，涵盖生信/化学信息/文献检索/科学写作/统计分析等，兼容 Claude Code、Codex、Cursor、Gemini CLI
+  repo: https://github.com/InternScience/Awesome-Scientific-Skills
+  local_path: Awesome-Scientific-Skills
+  categories:
+  - academic-research
+  - scientific-writing
+  updated_at: '2026-03-12'
+  last_commit: '7f34e4fd4d2487a25de2848ea3d406aa8114fd98'
+  changelog:
+  - '2026-03-12  chore : rename readme_skills.md；fix : modify readme；feat : add skills-metric dir；fix : fix some bugs；fix : fix unicode bug；…（共 10 条）'
+
+- name: Research-Paper-Writing-Skills
+  display_name: Research Paper Writing Skills
+  description: ML/CV/NLP 论文写作技能包，基于彭思达教授开放笔记整理，涵盖 Abstract/Introduction/Method/Experiments/Conclusion 各节写作指导
+  repo: https://github.com/Master-cai/Research-Paper-Writing-Skills
+  local_path: Research-Paper-Writing-Skills
+  categories:
+  - scientific-writing
+  - academic-research
+  updated_at: '2026-04-23'
+  last_commit: '9ee5eddc10068cc52590b3a68a827d3a387f5af9'
+  changelog:
+  - 2026-04-23  Add MIT license and reference it in readmes；add research-paper-writing skill and bilingual README；first commit
+
+- name: openresearch
+  display_name: OpenResearch
+  description: 以「声明-证据」原子图谱为核心的 AI/ML 研究协作系统，AI 围绕 claim 自主生成实验、执行、回收结果并回写图谱，graph-first 持续演化
+  repo: https://github.com/openResearch1/openresearch
+  local_path: openresearch
+  categories:
+  - autonomous-research
+  - academic-research
+  updated_at: '2026-05-06'
+  last_commit: 'bb6aaa4fc54fd253b982f6c21a0dc143350d7d0f'
+  changelog:
+  - '2026-05-06  fix(collab): wake on session idle + prevent list_children polling；新增 GraphRAG 剪枝和评分功能；  feat(collab): multi-agent collaboration framework'
+  - '2026-05-02  project-runtime-profile； fix(atom-detail): sync session id before toggling chat；  fix(provider): backport deepseek reasoning and interleaved fallback；修复本身不联网的服务器实验时无法启用wandb监控的bug,新增为服务器设置反向隧道的功能；新增add_new_idea功能,将idea解析为原子树'
+
+- name: html-anything
+  display_name: HTML Anything
+  description: AI Agent HTML 生成参考项目，用于把需求转化为可交付的 HTML 页面、组件或单文件产物
+  repo: https://github.com/nexu-io/html-anything
+  local_path: html-anything
+  categories:
+  - coding
+  updated_at: ''
+  changelog: []
+
+- name: html-effectiveness
+  display_name: HTML Effectiveness
+  description: Anthropic HTML 产物效果评估项目，用于评估 AI 生成 HTML 页面的质量、任务完成度与展示有效性
+  repo: https://github.com/anthropics/html-effectiveness
+  local_path: html-effectiveness
+  categories:
+  - coding
+  updated_at: ''
+  changelog: []
+
+- name: openhuman
+  display_name: OpenHuman
+  description: tinyhumansai 开放 AI human / agent 交互项目，可作为拟人化 Agent 和应用构建参考
+  repo: https://github.com/tinyhumansai/openhuman
+  local_path: openhuman
+  categories:
+  - coding
+  - autonomous-research
+  updated_at: ''
+  changelog: []
+
+- name: ppt-master
+  display_name: PPT Master
+  description: 演示文稿生成项目，提供中文说明，适合用于 AI 生成、润色和组织 PPT 内容
+  repo: https://github.com/hugohe3/ppt-master
+  local_path: ppt-master
+  categories:
+  - coding
+  - scientific-writing
+  updated_at: ''
+  changelog: []
