@@ -319,3 +319,13 @@ repos:
   - coding
   updated_at: ''
   changelog: []
+
+- name: mattpocock-skills
+  display_name: Matt Pocock Skills
+  description: Matt Pocock 面向真实软件工程的 AI Agent skills 套件，覆盖需求追问、PRD/issue 拆分、TDD、诊断、架构改进、triage 和代码库上下文整理
+  repo: https://github.com/mattpocock/skills
+  local_path: mattpocock-skills
+  categories:
+  - coding
+  updated_at: ''
+  changelog: []
