@@ -309,3 +309,13 @@ repos:
   changelog:
   - '2026-06-04  docs(readme): note Gemini 3.5 Flash as a strong value pick；feat(fonts): widen font variety and recognition；fix(svg_editor): allow adding move coordinates；feat(strategist): give each outline page one core message；fix(pptx_to_svg): inherit placeholder list text styles；…（共 9 条）'
   last_commit: 63c9ccf2e13326dff6562fc1e6879e5907f4d856
+
+- name: conductor
+  display_name: Conductor
+  description: 长周期 AI 工作的上下文卫生和交互式分支编排 skill，提供 Codex skill、Claude Code plugin、dispatch 调度室、dirty explainer sidecar 与显式合并门
+  repo: https://github.com/Jinghao67/conductor
+  local_path: conductor
+  categories:
+  - coding
+  updated_at: ''
+  changelog: []

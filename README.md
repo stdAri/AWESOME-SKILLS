@@ -2,7 +2,7 @@
 
 > 个人精选的 AI Agent Skills / Agent Research 项目索引，以 **repo 为单位**管理。每个条目可能包含一个或多个 Skill，也可能是可供 Claude Code、Codex、Cursor、Gemini CLI 等 Agent 参考的完整框架或基准项目。
 
-*最后更新：2026-06-06；最近同步数据见 `registry.yaml`。*
+*最后更新：2026-06-10；最近同步数据见 `registry.yaml`。*
 
 ---
 
@@ -35,7 +35,7 @@
 | 写论文、改 manuscript、生成 arXiv/IEEE 风格产物 | [SciWrite](sciwrite/)、[Research Paper Writing Skills](Research-Paper-Writing-Skills/)、[LaTeX arXiv Paper Writer](latex-arxiv-SKILL/) |
 | 让 Agent 自主跑实验或持续推进研究 | [autoresearch](autoresearch/)、[OpenResearch](openresearch/)、[ARIS](Auto-claude-code-research-in-sleep/) |
 | 深度搜索、RSS、外部知识获取 | [UniFuncs Agent Skills](skills/)、[Folo CLI Skill](folo/) |
-| 研究 Agent Skill 的工程化、运行时、行为约束 | [SkVM](SkVM/)、[Karpathy-Inspired Claude Code Guidelines](andrej-karpathy-skills/) |
+| 研究 Agent Skill 的工程化、运行时、行为约束 | [SkVM](SkVM/)、[Karpathy-Inspired Claude Code Guidelines](andrej-karpathy-skills/)、[Conductor](conductor/) |
 | 生成 PPT、HTML 页面或评估前端产物 | [歸藏 Magazine Web PPT Skill](guizang-ppt-skill/)、[PPT Master](ppt-master/)、[HTML Anything](html-anything/)、[HTML Effectiveness](html-effectiveness/) |
 
 ---
@@ -100,6 +100,7 @@
 |---|---|---|---|---|
 | **[SkVM](SkVM/)** | LLM Agent Skill 编译运行时，对 Skill 做 Profiling、AOT 编译和 JIT 优化，使其跨模型和 harness 运行 | 运行时 / 研究系统 | [SJTU-IPADS/SkVM](https://github.com/SJTU-IPADS/SkVM) | 2026-06-06 |
 | **[Karpathy-Inspired Claude Code Guidelines](andrej-karpathy-skills/)** | 以单一 CLAUDE.md 改善 Claude Code 行为：先思后码、简洁优先、外科修改、目标驱动 | 行为规范 / Claude Code Plugin | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | 2026-04-20 |
+| **[Conductor](conductor/)** | 长周期 AI 工作的上下文卫生与交互式分支编排：干净 master、可交互分支、调度室和脏解释 sidecar | Skill / Claude Code Plugin | [Jinghao67/conductor](https://github.com/Jinghao67/conductor) | 待初始化 |
 
 ### 演示、HTML 与可视化产物
 
