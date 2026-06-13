@@ -329,3 +329,14 @@ repos:
   - coding
   updated_at: ''
   changelog: []
+
+- name: qmd
+  display_name: QMD
+  description: 本地优先的文档、知识库和会议记录搜索引擎，组合 BM25 全文检索、向量语义搜索、LLM rerank，并提供 CLI、MCP server 和 Node/Bun SDK
+  repo: https://github.com/tobi/qmd
+  local_path: qmd
+  categories:
+  - search
+  - information-retrieval
+  updated_at: ''
+  changelog: []

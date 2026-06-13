@@ -2,7 +2,7 @@
 
 > 个人精选的 AI Agent Skills / Agent Research 项目索引，以 **repo 为单位**管理。每个条目可能包含一个或多个 Skill，也可能是可供 Claude Code、Codex、Cursor、Gemini CLI 等 Agent 参考的完整框架或基准项目。
 
-*最后更新：2026-06-10；最近同步数据见 `registry.yaml`。*
+*最后更新：2026-06-13；最近同步数据见 `registry.yaml`。*
 
 ---
 
@@ -34,7 +34,7 @@
 | 深读单篇论文、重建数学推导 | [Paper Deep Reading Skill](paper-deep-reading-skill/)、[Applied Math Paper Derivation](applied-math-paper-derivation/) |
 | 写论文、改 manuscript、生成 arXiv/IEEE 风格产物 | [SciWrite](sciwrite/)、[Research Paper Writing Skills](Research-Paper-Writing-Skills/)、[LaTeX arXiv Paper Writer](latex-arxiv-SKILL/) |
 | 让 Agent 自主跑实验或持续推进研究 | [autoresearch](autoresearch/)、[OpenResearch](openresearch/)、[ARIS](Auto-claude-code-research-in-sleep/) |
-| 深度搜索、RSS、外部知识获取 | [UniFuncs Agent Skills](skills/)、[Folo CLI Skill](folo/) |
+| 深度搜索、RSS、外部知识获取 | [UniFuncs Agent Skills](skills/)、[Folo CLI Skill](folo/)、[QMD](qmd/) |
 | 研究 Agent Skill 的工程化、运行时、行为约束 | [SkVM](SkVM/)、[Karpathy-Inspired Claude Code Guidelines](andrej-karpathy-skills/)、[Conductor](conductor/)、[Matt Pocock Skills](mattpocock-skills/) |
 | 生成 PPT、HTML 页面或评估前端产物 | [歸藏 Magazine Web PPT Skill](guizang-ppt-skill/)、[PPT Master](ppt-master/)、[HTML Anything](html-anything/)、[HTML Effectiveness](html-effectiveness/) |
 
@@ -91,6 +91,7 @@
 |---|---|---|---|---|
 | **[UniFuncs Agent Skills](skills/)** | 实时网页搜索、URL 内容读取（PDF/Word/Excel/PPTX）、多源交叉验证深度搜索和深度研究报告生成 | Skill 套件 | [UniFuncs/skills](https://github.com/UniFuncs/skills) | 2026-05-27 |
 | **[Folo CLI Skill](folo/)** | Folo RSS 阅读器 CLI 技能，支持订阅管理、时间线阅读、未读处理、收藏操作、OPML 导入导出 | Skill / CLI | [RSSNext/Folo](https://github.com/RSSNext/Folo) | 2026-06-06 |
+| **[QMD](qmd/)** | 本地文档、知识库、会议记录搜索引擎，组合 BM25、向量语义搜索和 LLM rerank，并提供 CLI 与 MCP server | CLI / 本地搜索 | [tobi/qmd](https://github.com/tobi/qmd) | 待初始化 |
 
 ### Agent 开发、运行时与行为规范
 
