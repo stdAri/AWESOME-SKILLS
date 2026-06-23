@@ -340,3 +340,16 @@ repos:
   - information-retrieval
   updated_at: ''
   changelog: []
+
+- name: nature-skills
+  display_name: Nature Skills
+  description: 面向 Nature / 高影响力期刊科研产出的 Codex Skills 套件，覆盖论文写作、英文润色、审稿模拟、引用检索、全文 reader、论文转 PPT、数据可用性和论文转专利等流程
+  repo: https://github.com/Yuan1z0825/nature-skills.git
+  local_path: nature-skills
+  categories:
+  - scientific-writing
+  - academic-research
+  updated_at: '2026-06-20'
+  last_commit: '5d2ba1dee1c087be6de8f4a8aad4b27f04974be9'
+  changelog:
+  - '2026-06-20  Update README.md；Remove skill descriptions from README；Update README.md；Add OpenClaw medical skills for Codex；Update README.md；…（共 10 条）'
