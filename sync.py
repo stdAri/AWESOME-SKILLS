@@ -7,10 +7,10 @@
   - skill_source: 通过 HTTP 下载对比 SHA-256，有变化则更新本地 SKILL.md 并追加 changelog
 
 用法:
-    python scripts/sync.py               # 默认仅预览，不修改任何文件
-    python scripts/sync.py --apply        # 实际写入 registry.yaml / README.md
-    python scripts/sync.py --repo folo    # 只同步指定 repo（仍默认预览）
-    python scripts/sync.py --apply --repo folo
+    python sync.py               # 默认仅预览，不修改任何文件
+    python sync.py --apply        # 实际写入 registry.yaml / README.md
+    python sync.py --repo folo    # 只同步指定 repo（仍默认预览）
+    python sync.py --apply --repo folo
 """
 
 import argparse
@@ -24,7 +24,7 @@ import requests
 from ruamel.yaml import YAML
 
 # ── 路径 ─────────────────────────────────────────────────────────────────────
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).parent
 REGISTRY  = REPO_ROOT / "registry.yaml"
 README    = REPO_ROOT / "README.md"
 
@@ -117,9 +117,9 @@ def prepend_changelog(entry: dict, new_date: str, summary: str) -> None:
 
 
 # ── README.md 更新（只替换表格行中的“最近同步”日期，保持 README 简洁） ───────────
-def update_readme_entry(readme_text: str, local_path: str,
+def update_readme_entry(readme_text: str, link_target: str,
                         new_date: str, new_summary: str) -> str:
-    escaped = re.escape(local_path)
+    escaped = re.escape(link_target)
     pattern = re.compile(
         rf"(\|\s*\*\*\[[^\]]+\]\({escaped}[^)]*\)\*\*[^\r\n]*\|\s*)"
         rf"(?:\d{{4}}-\d{{2}}-\d{{2}}|待初始化|（待初始化）)"
@@ -261,7 +261,7 @@ def main() -> None:
         if summary and not dry_run:
             new_date = entry.get("updated_at", today)
             readme_text = update_readme_entry(
-                readme_text, entry["local_path"], new_date, summary
+                readme_text, entry.get("repo", entry["local_path"]), new_date, summary
             )
             any_changed = True
 
