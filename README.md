@@ -30,14 +30,14 @@
 
 | 需求 | 优先看 |
 |---|---|
-| 从选题、检索、写作到审稿的完整学术流水线 | [Academic Research Skills](academic-research-skills/)、[ARIS](Auto-claude-code-research-in-sleep/)、[Claude Scholar](claude-scholar/) |
-| 找选题、从前沿文献挖可发表的研究点子 | [Nobel Skill](nobel-skill/)、[Academic Research Skills](academic-research-skills/) |
-| 深读单篇论文、重建数学推导 | [Paper Deep Reading Skill](paper-deep-reading-skill/)、[Applied Math Paper Derivation](applied-math-paper-derivation/) |
-| 写论文、改 manuscript、生成 arXiv/IEEE 风格产物 | [Nature Skills](nature-skills/)、[SciWrite](sciwrite/)、[Research Paper Writing Skills](Research-Paper-Writing-Skills/)、[LaTeX arXiv Paper Writer](latex-arxiv-SKILL/) |
-| 让 Agent 自主跑实验或持续推进研究 | [autoresearch](autoresearch/)、[OpenResearch](openresearch/)、[ARIS](Auto-claude-code-research-in-sleep/) |
-| 深度搜索、RSS、外部知识获取 | [UniFuncs Agent Skills](skills/)、[Folo CLI Skill](folo/)、[QMD](qmd/) |
-| 研究 Agent Skill 的工程化、运行时、行为约束 | [SkVM](SkVM/)、[Karpathy-Inspired Claude Code Guidelines](andrej-karpathy-skills/)、[Conductor](conductor/)、[Matt Pocock Skills](mattpocock-skills/) |
-| 生成 PPT、HTML 页面或评估前端产物 | [歸藏 Magazine Web PPT Skill](guizang-ppt-skill/)、[PPT Master](ppt-master/)、[HTML Anything](html-anything/)、[HTML Effectiveness](html-effectiveness/) |
+| 从选题、检索、写作到审稿的完整学术流水线 | [Academic Research Skills](https://github.com/Imbad0202/academic-research-skills)、[ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)、[Claude Scholar](https://github.com/Galaxy-Dawn/claude-scholar) |
+| 找选题、从前沿文献挖可发表的研究点子 | [Nobel Skill](https://github.com/limi124/nobel-skill)、[Academic Research Skills](https://github.com/Imbad0202/academic-research-skills) |
+| 深读单篇论文、重建数学推导 | [Paper Deep Reading Skill](https://github.com/Eroticoo/paper-deep-reading-skill)、[Applied Math Paper Derivation](https://github.com/Eroticoo/applied-math-paper-derivation) |
+| 写论文、改 manuscript、生成 arXiv/IEEE 风格产物 | [Nature Skills](https://github.com/Yuan1z0825/nature-skills)、[SciWrite](https://github.com/labarba/sciwrite)、[Research Paper Writing Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills)、[LaTeX arXiv Paper Writer](https://github.com/renocrypt/latex-arxiv-SKILL) |
+| 让 Agent 自主跑实验或持续推进研究 | [autoresearch](https://github.com/karpathy/autoresearch)、[OpenResearch](https://github.com/openResearch1/openresearch)、[ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) |
+| 深度搜索、RSS、外部知识获取 | [UniFuncs Agent Skills](https://github.com/UniFuncs/skills)、[Folo CLI Skill](https://github.com/RSSNext/Folo)、[QMD](https://github.com/tobi/qmd) |
+| 研究 Agent Skill 的工程化、运行时、行为约束 | [SkVM](https://github.com/SJTU-IPADS/SkVM)、[Karpathy-Inspired Claude Code Guidelines](https://github.com/forrestchang/andrej-karpathy-skills)、[Conductor](https://github.com/Jinghao67/conductor)、[Matt Pocock Skills](https://github.com/mattpocock/skills) |
+| 生成 PPT、HTML 页面或评估前端产物 | [歸藏 Magazine Web PPT Skill](https://github.com/op7418/guizang-ppt-skill)、[PPT Master](https://github.com/hugohe3/ppt-master)、[HTML Anything](https://github.com/nexu-io/html-anything)、[HTML Effectiveness](https://github.com/anthropics/html-effectiveness) |
 
 ---
 
@@ -74,7 +74,7 @@
 | **[Research Paper Writing Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills)** | ML/CV/NLP 论文各章节写作指导，覆盖 Abstract、Introduction、Method、Experiments、Conclusion | Skill | 2026-04-23 |
 | **[LaTeX arXiv Paper Writer](https://github.com/renocrypt/latex-arxiv-SKILL)** | Issue 驱动的 IEEEtran 双栏 LaTeX 工作流，生成 arXiv ML/AI 综述论文并验证 BibTeX 引文 | Skill | 2025-12-29 |
 | **[PPT Master](https://github.com/hugohe3/ppt-master)** | 演示文稿生成项目，适合 AI 生成、润色和组织 PPT 内容 | 项目 / PPT 工作流 | 2026-06-04 |
-| **[Nature Skills](https://github.com/Yuan1z0825/nature-skills.git)** | 面向 Nature / 高影响力期刊科研产出的 Skills 套件，覆盖写作、润色、审稿、引用、全文 reader、论文转 PPT、数据可用性和论文转专利 | Skill 套件 | 2026-06-20 |
+| **[Nature Skills](https://github.com/Yuan1z0825/nature-skills)** | 面向 Nature / 高影响力期刊科研产出的 Skills 套件，覆盖写作、润色、审稿、引用、全文 reader、论文转 PPT、数据可用性和论文转专利 | Skill 套件 | 2026-06-20 |
 
 ### 自主研究与实验系统
 

@@ -344,7 +344,7 @@ repos:
 - name: nature-skills
   display_name: Nature Skills
   description: 面向 Nature / 高影响力期刊科研产出的 Codex Skills 套件，覆盖论文写作、英文润色、审稿模拟、引用检索、全文 reader、论文转 PPT、数据可用性和论文转专利等流程
-  repo: https://github.com/Yuan1z0825/nature-skills.git
+  repo: https://github.com/Yuan1z0825/nature-skills
   local_path: nature-skills
   categories:
   - scientific-writing
