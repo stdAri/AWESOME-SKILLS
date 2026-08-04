@@ -2,7 +2,7 @@
 
 > 个人精选的 AI Agent Skills / Agent Research 项目索引，以 **repo 为单位**管理。每个条目可能包含一个或多个 Skill，也可能是可供 Claude Code、Codex、Cursor、Gemini CLI 等 Agent 参考的完整框架或基准项目。
 
-*最后更新：2026-06-13；最近同步数据见 `registry.yaml`。*
+*最后更新：2026-08-04；最近同步数据见 `registry.yaml`。*
 
 ---
 
@@ -49,9 +49,9 @@
 
 | Repo | 重点能力 | 形式 | 最近同步 |
 |---|---|---|---|
-| **[Academic Research Skills](https://github.com/Imbad0202/academic-research-skills)** | 从选题到投稿的完整学术研究流水线，含完整性门控、引用核查、交叉验证和 VLM 图表验证 | Skill 套件 | 2026-06-06 |
-| **[Claude Scholar](https://github.com/Galaxy-Dawn/claude-scholar)** | 面向 CS/AI 研究者的半自动化研究助手，覆盖文献综述、实验代码、分析报告写作和项目知识管理 | 框架 / commands / skills | 2026-06-05 |
-| **[ARIS — Auto Research In Sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)** | 让 Claude Code overnight 推进研究：评审循环、实验执行、叙述改写、多源文献检索 | Markdown 工作流 / Skill 集 | 2026-06-05 |
+| **[Academic Research Skills](https://github.com/Imbad0202/academic-research-skills)** | 从选题到投稿的完整学术研究流水线，含完整性门控、引用核查、交叉验证和 VLM 图表验证 | Skill 套件 | 2026-08-04 |
+| **[Claude Scholar](https://github.com/Galaxy-Dawn/claude-scholar)** | 面向 CS/AI 研究者的半自动化研究助手，覆盖文献综述、实验代码、分析报告写作和项目知识管理 | 框架 / commands / skills | 2026-07-02 |
+| **[ARIS — Auto Research In Sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)** | 让 Claude Code overnight 推进研究：评审循环、实验执行、叙述改写、多源文献检索 | Markdown 工作流 / Skill 集 | 2026-08-04 |
 | **[Nobel Skill](https://github.com/limi124/nobel-skill)** | 跨学科选题：从前沿文献挖 gap，审计数据/材料可行性，做新颖性压力测试并输出可执行研究设计 | Skill | 2026-08-02 |
 
 ### 论文阅读、推导与文献处理
@@ -62,7 +62,7 @@
 |---|---|---|---|
 | **[Paper Deep Reading Skill](https://github.com/Eroticoo/paper-deep-reading-skill)** | 逐页精读本地学术 PDF，抓取定理链与仿真截图，输出带图证据的中文 Markdown 报告 | Skill | 2026-04-21 |
 | **[Applied Math Paper Derivation](https://github.com/Eroticoo/applied-math-paper-derivation)** | 面向英文应用数学论文的推导重建，逐段详解公式与创新点，输出 IEEE 双栏 PDF + Markdown | Skill | 2026-04-02 |
-| **[Awesome Agent Skills for Empirical Research](https://github.com/brycewang-stanford/Awesome-Agent-Skills-for-Empirical-Research)** | 实证研究 Skills 大全，覆盖 DID、IV、RDD、PSM 等因果推断链路 | 外部合集 / skill registry | 2026-06-05 |
+| **[Awesome Agent Skills for Empirical Research](https://github.com/brycewang-stanford/Awesome-Agent-Skills-for-Empirical-Research)** | 实证研究 Skills 大全，覆盖 DID、IV、RDD、PSM 等因果推断链路 | 外部合集 / skill registry | 2026-08-04 |
 
 ### 科学写作与投稿产出
 
@@ -70,11 +70,11 @@
 
 | Repo | 重点能力 | 形式 | 最近同步 |
 |---|---|---|---|
-| **[SciWrite — Manuscript Writing Review](https://github.com/labarba/sciwrite)** | 基于 Stanford Writing in the Sciences 的五轮手稿写作审查：去冗余、主动语态、句子结构、关键词一致性、数据引用完整性 | Skill | 2026-04-04 |
-| **[Research Paper Writing Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills)** | ML/CV/NLP 论文各章节写作指导，覆盖 Abstract、Introduction、Method、Experiments、Conclusion | Skill | 2026-04-23 |
-| **[LaTeX arXiv Paper Writer](https://github.com/renocrypt/latex-arxiv-SKILL)** | Issue 驱动的 IEEEtran 双栏 LaTeX 工作流，生成 arXiv ML/AI 综述论文并验证 BibTeX 引文 | Skill | 2025-12-29 |
-| **[PPT Master](https://github.com/hugohe3/ppt-master)** | 演示文稿生成项目，适合 AI 生成、润色和组织 PPT 内容 | 项目 / PPT 工作流 | 2026-06-04 |
-| **[Nature Skills](https://github.com/Yuan1z0825/nature-skills)** | 面向 Nature / 高影响力期刊科研产出的 Skills 套件，覆盖写作、润色、审稿、引用、全文 reader、论文转 PPT、数据可用性和论文转专利 | Skill 套件 | 2026-06-20 |
+| **[SciWrite — Manuscript Writing Review](https://github.com/labarba/sciwrite)** | 基于 Stanford Writing in the Sciences 的五轮手稿写作审查：去冗余、主动语态、句子结构、关键词一致性、数据引用完整性 | Skill | 2026-08-03 |
+| **[Research Paper Writing Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills)** | ML/CV/NLP 论文各章节写作指导，覆盖 Abstract、Introduction、Method、Experiments、Conclusion | Skill | 2026-06-23 |
+| **[LaTeX arXiv Paper Writer](https://github.com/renocrypt/latex-arxiv-SKILL)** | Issue 驱动的 IEEEtran 双栏 LaTeX 工作流，生成 arXiv ML/AI 综述论文并验证 BibTeX 引文 | Skill | 2026-07-12 |
+| **[PPT Master](https://github.com/hugohe3/ppt-master)** | 演示文稿生成项目，适合 AI 生成、润色和组织 PPT 内容 | 项目 / PPT 工作流 | 2026-08-04 |
+| **[Nature Skills](https://github.com/Yuan1z0825/nature-skills)** | 面向 Nature / 高影响力期刊科研产出的 Skills 套件，覆盖写作、润色、审稿、引用、全文 reader、论文转 PPT、数据可用性和论文转专利 | Skill 套件 | 2026-08-04 |
 
 ### 自主研究与实验系统
 
@@ -83,8 +83,8 @@
 | Repo | 重点能力 | 形式 | 最近同步 |
 |---|---|---|---|
 | **[autoresearch](https://github.com/karpathy/autoresearch)** | 给 AI Agent 一个迷你 LLM 训练环境：修改训练代码、固定 5 分钟训练、比对 `val_bpb`、保留或回滚 | 实验环境 | 2026-03-25 |
-| **[OpenResearch](https://github.com/openResearch1/openresearch)** | 以“声明-证据”原子图谱为核心，AI 围绕 claim 生成实验、执行、回收结果并回写图谱 | 研究协作系统 | 2026-05-29 |
-| **[OpenHuman](https://github.com/tinyhumansai/openhuman)** | tinyhumansai 开放 AI human / agent 交互项目，可作为拟人化 Agent 和应用构建参考 | Agent 应用参考 | 2026-06-05 |
+| **[OpenResearch](https://github.com/openResearch1/openresearch)** | 以“声明-证据”原子图谱为核心，AI 围绕 claim 生成实验、执行、回收结果并回写图谱 | 研究协作系统 | 2026-07-27 |
+| **[OpenHuman](https://github.com/tinyhumansai/openhuman)** | tinyhumansai 开放 AI human / agent 交互项目，可作为拟人化 Agent 和应用构建参考 | Agent 应用参考 | 2026-08-04 |
 
 ### 搜索、信息获取与知识源
 
@@ -93,8 +93,8 @@
 | Repo | 重点能力 | 形式 | 最近同步 |
 |---|---|---|---|
 | **[UniFuncs Agent Skills](https://github.com/UniFuncs/skills)** | 实时网页搜索、URL 内容读取（PDF/Word/Excel/PPTX）、多源交叉验证深度搜索和深度研究报告生成 | Skill 套件 | 2026-05-27 |
-| **[Folo CLI Skill](https://github.com/RSSNext/Folo)** | Folo RSS 阅读器 CLI 技能，支持订阅管理、时间线阅读、未读处理、收藏操作、OPML 导入导出 | Skill / CLI | 2026-06-06 |
-| **[QMD](https://github.com/tobi/qmd)** | 本地文档、知识库、会议记录搜索引擎，组合 BM25、向量语义搜索和 LLM rerank，并提供 CLI 与 MCP server | CLI / 本地搜索 | 待初始化 |
+| **[Folo CLI Skill](https://github.com/RSSNext/Folo)** | Folo RSS 阅读器 CLI 技能，支持订阅管理、时间线阅读、未读处理、收藏操作、OPML 导入导出 | Skill / CLI | 2026-08-01 |
+| **[QMD](https://github.com/tobi/qmd)** | 本地文档、知识库、会议记录搜索引擎，组合 BM25、向量语义搜索和 LLM rerank，并提供 CLI 与 MCP server | CLI / 本地搜索 | 2026-06-24 |
 
 ### Agent 开发、运行时与行为规范
 
@@ -102,10 +102,10 @@
 
 | Repo | 重点能力 | 形式 | 最近同步 |
 |---|---|---|---|
-| **[SkVM](https://github.com/SJTU-IPADS/SkVM)** | LLM Agent Skill 编译运行时，对 Skill 做 Profiling、AOT 编译和 JIT 优化，使其跨模型和 harness 运行 | 运行时 / 研究系统 | 2026-06-06 |
+| **[SkVM](https://github.com/SJTU-IPADS/SkVM)** | LLM Agent Skill 编译运行时，对 Skill 做 Profiling、AOT 编译和 JIT 优化，使其跨模型和 harness 运行 | 运行时 / 研究系统 | 2026-07-10 |
 | **[Karpathy-Inspired Claude Code Guidelines](https://github.com/forrestchang/andrej-karpathy-skills)** | 以单一 CLAUDE.md 改善 Claude Code 行为：先思后码、简洁优先、外科修改、目标驱动 | 行为规范 / Claude Code Plugin | 2026-04-20 |
-| **[Conductor](https://github.com/Jinghao67/conductor)** | 长周期 AI 工作的上下文卫生与交互式分支编排：干净 master、可交互分支、调度室和脏解释 sidecar | Skill / Claude Code Plugin | 待初始化 |
-| **[Matt Pocock Skills](https://github.com/mattpocock/skills)** | 面向真实软件工程的 Agent Skill 套件：需求追问、PRD/issue 拆分、TDD、诊断、架构改进和代码库上下文整理 | Skill 套件 / 工程工作流 | 待初始化 |
+| **[Conductor](https://github.com/Jinghao67/conductor)** | 长周期 AI 工作的上下文卫生与交互式分支编排：干净 master、可交互分支、调度室和脏解释 sidecar | Skill / Claude Code Plugin | 2026-06-10 |
+| **[Matt Pocock Skills](https://github.com/mattpocock/skills)** | 面向真实软件工程的 Agent Skill 套件：需求追问、PRD/issue 拆分、TDD、诊断、架构改进和代码库上下文整理 | Skill 套件 / 工程工作流 | 2026-07-28 |
 
 ### 演示、HTML 与可视化产物
 
@@ -113,8 +113,8 @@
 
 | Repo | 重点能力 | 形式 | 最近同步 |
 |---|---|---|---|
-| **[歸藏 Magazine Web PPT Skill](https://github.com/op7418/guizang-ppt-skill)** | 生成电子杂志风横向翻页单文件 HTML PPT，含 WebGL 背景、主题色和多种页面布局 | Skill | 2026-06-02 |
-| **[HTML Anything](https://github.com/nexu-io/html-anything)** | AI Agent HTML 生成参考项目，用于把需求转化为可交付 HTML 页面、组件或单文件产物 | 前端生成参考 | 2026-06-02 |
+| **[歸藏 Magazine Web PPT Skill](https://github.com/op7418/guizang-ppt-skill)** | 生成电子杂志风横向翻页单文件 HTML PPT，含 WebGL 背景、主题色和多种页面布局 | Skill | 2026-07-22 |
+| **[HTML Anything](https://github.com/nexu-io/html-anything)** | AI Agent HTML 生成参考项目，用于把需求转化为可交付 HTML 页面、组件或单文件产物 | 前端生成参考 | 2026-07-28 |
 | **[HTML Effectiveness](https://github.com/anthropics/html-effectiveness)** | Anthropic HTML 产物效果评估项目，用于评估 AI 生成 HTML 页面的质量、任务完成度与展示有效性 | 评估基准 | 2026-05-15 |
 
 ### 综合合集与外部索引
@@ -124,7 +124,7 @@
 | Repo | 重点能力 | 形式 | 最近同步 |
 |---|---|---|---|
 | **[Awesome Scientific Skills](https://github.com/InternScience/Awesome-Scientific-Skills)** | 面向自然科学研究者的开放 Agent Skills 精选合集，涵盖生信、化学信息、文献检索、科学写作、统计分析等 | 外部合集 | 2026-05-26 |
-| **[Awesome Agent Skills for Empirical Research](https://github.com/brycewang-stanford/Awesome-Agent-Skills-for-Empirical-Research)** | CoPaper.AI × Stanford REAP 维护的实证研究 Skills 大全，收录大量经验研究工作流 | 外部合集 | 2026-06-05 |
+| **[Awesome Agent Skills for Empirical Research](https://github.com/brycewang-stanford/Awesome-Agent-Skills-for-Empirical-Research)** | CoPaper.AI × Stanford REAP 维护的实证研究 Skills 大全，收录大量经验研究工作流 | 外部合集 | 2026-08-04 |
 
 ---
 

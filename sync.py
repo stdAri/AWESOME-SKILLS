@@ -267,8 +267,8 @@ def main() -> None:
 
     if not dry_run and any_changed:
         readme_text = re.sub(
-            r"\*最后更新：\d{4}-\d{2}-\d{2}\*",
-            f"*最后更新：{today}*",
+            r"(\*最后更新：)\d{4}-\d{2}-\d{2}",
+            rf"\g<1>{today}",
             readme_text,
         )
         save_registry(doc, REGISTRY)
