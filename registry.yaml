@@ -353,3 +353,15 @@ repos:
   last_commit: '5d2ba1dee1c087be6de8f4a8aad4b27f04974be9'
   changelog:
   - '2026-06-20  Update README.md；Remove skill descriptions from README；Update README.md；Add OpenClaw medical skills for Codex；Update README.md；…（共 10 条）'
+
+- name: nobel-skill
+  display_name: Nobel Skill
+  description: 跨学科选题 Skill，把前沿文献转成可发表、可执行的研究点子：问题挖掘→领域适配的顶刊/顶会检索→gap 与数据/材料可行性审计→新颖性压力测试→跨学科机制迁移→研究设计与评分排序
+  repo: https://github.com/limi124/nobel-skill
+  local_path: nobel-skill
+  categories:
+  - academic-research
+  updated_at: '2026-08-02'
+  last_commit: '7da582aa87d8aac1af11b81cad94131b96fc4bc9'
+  changelog:
+  - 2026-08-02  Publish Nobel Skill

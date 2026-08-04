@@ -31,6 +31,7 @@
 | 需求 | 优先看 |
 |---|---|
 | 从选题、检索、写作到审稿的完整学术流水线 | [Academic Research Skills](academic-research-skills/)、[ARIS](Auto-claude-code-research-in-sleep/)、[Claude Scholar](claude-scholar/) |
+| 找选题、从前沿文献挖可发表的研究点子 | [Nobel Skill](nobel-skill/)、[Academic Research Skills](academic-research-skills/) |
 | 深读单篇论文、重建数学推导 | [Paper Deep Reading Skill](paper-deep-reading-skill/)、[Applied Math Paper Derivation](applied-math-paper-derivation/) |
 | 写论文、改 manuscript、生成 arXiv/IEEE 风格产物 | [Nature Skills](nature-skills/)、[SciWrite](sciwrite/)、[Research Paper Writing Skills](Research-Paper-Writing-Skills/)、[LaTeX arXiv Paper Writer](latex-arxiv-SKILL/) |
 | 让 Agent 自主跑实验或持续推进研究 | [autoresearch](autoresearch/)、[OpenResearch](openresearch/)、[ARIS](Auto-claude-code-research-in-sleep/) |
@@ -51,6 +52,7 @@
 | **[Academic Research Skills](https://github.com/Imbad0202/academic-research-skills)** | 从选题到投稿的完整学术研究流水线，含完整性门控、引用核查、交叉验证和 VLM 图表验证 | Skill 套件 | 2026-06-06 |
 | **[Claude Scholar](https://github.com/Galaxy-Dawn/claude-scholar)** | 面向 CS/AI 研究者的半自动化研究助手，覆盖文献综述、实验代码、分析报告写作和项目知识管理 | 框架 / commands / skills | 2026-06-05 |
 | **[ARIS — Auto Research In Sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)** | 让 Claude Code overnight 推进研究：评审循环、实验执行、叙述改写、多源文献检索 | Markdown 工作流 / Skill 集 | 2026-06-05 |
+| **[Nobel Skill](https://github.com/limi124/nobel-skill)** | 跨学科选题：从前沿文献挖 gap，审计数据/材料可行性，做新颖性压力测试并输出可执行研究设计 | Skill | 2026-08-02 |
 
 ### 论文阅读、推导与文献处理
 
